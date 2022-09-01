@@ -24,3 +24,34 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nail-polish-box {
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
