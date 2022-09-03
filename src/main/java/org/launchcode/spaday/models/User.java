@@ -13,21 +13,24 @@ public class User {
     private String email;
 
     @NotBlank
-    @NotNull
+    @NotNull(message = "Passwords do not match")
     @Size(min=6)
     private String password;
 
+
+    @NotNull(message = "Passwords do not match")
     private String verifyPassword;
 
     public User() {
 
     }
 
-    public User(String username, String email, String password) {
+    public User(String username, String email, String password, String verifyPassword) {
         this();
         this.username = username;
         this.email = email;
         this.password = password;
+        this.verifyPassword = verifyPassword;
     }
 
     public String getVerifyPassword() {
